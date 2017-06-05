@@ -1,1 +1,9 @@
+- A framework is a semi-complete applications, providing reusable/common structure to share amount applications.
+Developers extend the framework to their specific needs.
 
+- JUnit features
+  * separate test class instances and class loaders for each test to avoid side-effects
+  * JUnit annotations to provide resource initialization and reclamation methods: @Before, @BeforeClass, @After,
+  and @AfterClass
+  * a variety of assert methods to easily check results of tests
+  * popular tools integration
