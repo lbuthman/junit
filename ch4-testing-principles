@@ -1,1 +1,6 @@
+- Five types of Testing
+  1) Unit, 2) Integration, 3) Functional, 4) Stress/Load, 5) Acceptance
+  
+- Integration testing is about how individual components and classes tie together. These can be written before coding.
 
+- Functional tests examine code at the boundary of its public API; this typically corresponds to testing Use Cases.
