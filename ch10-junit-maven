@@ -1,1 +1,4 @@
+- Maven pulls dependencies from a central depository they host. Once pulled in for a project, they are stored in
+a local repository for future use.
 
+*** The bulk of this chapter is introducing Maven and I have a whole book that does that.
