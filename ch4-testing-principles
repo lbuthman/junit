@@ -4,3 +4,11 @@
 - Integration testing is about how individual components and classes tie together. These can be written before coding.
 
 - Functional tests examine code at the boundary of its public API; this typically corresponds to testing Use Cases.
+
+- Three types of unit tests
+  1) Logical unit tests -> focuses on single a method using mock objects and stubs
+  2) Integration unit tests -> focuses on interactions between components in real or part of the real environment
+  3) Functional unit tests -> extends the boundaries of integration tests to confirm a stimulus response
+
+- Black box testing has no knowledge of the internal state or behavior of the system, relying soley on external systems
+to interface in verifying correctness. All we need to know to test the system are its "functional specifications".
