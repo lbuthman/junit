@@ -12,3 +12,8 @@
 
 - Black box testing has no knowledge of the internal state or behavior of the system, relying soley on external systems
 to interface in verifying correctness. All we need to know to test the system are its "functional specifications".
+
+- Three steps to writing a test case
+  1) instantiate the class to test
+  2) set the class into a particular state
+  3) assert the final state of class
