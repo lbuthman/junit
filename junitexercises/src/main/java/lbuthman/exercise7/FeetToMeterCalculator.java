@@ -17,7 +17,7 @@ public class FeetToMeterCalculator {
 
         println("You entered dimensions of " + length + " feet by " + height + " feet.");
 
-        Square square = new lbuthman.exercise7.Square(length, height);
+        Square square = new Square(length, height);
 
         double areaInFeet = square.calculateAreaInFeet(square);
         double areaInMeters = square.calculateAreaInMeters(square);
