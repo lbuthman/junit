@@ -1,9 +1,0 @@
-- Assert methods with two parameters follows a pattern: param1 = expected value, param2 = actual value
-
-- All assert methods have an optional message param in position 1
-
-- The backbone of the JUnit framework
-  1) Test class -> a class containing one or more @Test annotated methods. There is usually a one-to-many mapping
-  of production classes to test classes
-  2) Test suite -> A group of test classes from the same package
-  3) Test runner -> A runner of test suites. JUnit provides various runners and we can write our own as well
