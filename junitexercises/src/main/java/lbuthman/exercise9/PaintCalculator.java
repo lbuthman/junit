@@ -1,31 +1,37 @@
 package lbuthman.exercise9;
 
-import java.util.Scanner;
-
-import static tools.Tools.*;
-
 public class PaintCalculator {
-     private static int GALLONS_IN_FEET = 350;
 
-    public static void main(String[] args) {
-        Scanner input = getScanner();
+    private static int GALLONS_IN_FEET = 350;
 
-        print("Enter the length of your room: ");
-        int length = input.nextInt();
+    private int length;
+    private int width;
 
-        print("Enter the width of your room: ");
-        int width = input.nextInt();
+    public int getLength() {
+        return length;
+    }
 
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int calculateGallons() {
         int gallons = 0;
         int area = length * width;
-        int a = area;
 
-        while (a > 0) {
+        while (area > 0) {
             gallons++;
-            a -= GALLONS_IN_FEET;
+            area -= GALLONS_IN_FEET;
         }
 
-        print("To paint a " + area + " foot room, you will need " + gallons + " gallons of paint.");
-
+        return gallons;
     }
 }
