@@ -1,3 +1,14 @@
+Typical Assert Methods
+    - assertArrayEquals()
+    - assertEquals()
+    - assertSame()
+    - assertTrue()
+    - assertNotNull()
+
+Parameterized class runner
+    - @RunWith(value=Parameterized.class)
+    - pg. 17
+
 - Assert methods with two parameters follows a pattern: param1 = expected value, param2 = actual value
 
 - All assert methods have an optional message param in position 1
