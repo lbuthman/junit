@@ -6,7 +6,7 @@ import static tools.Tools.*;
 public class PizzaParty1 {
     public static void main(String[] args) {
 
-        int SLICES_PER_PIZZA = 8;
+        PizzaCalculator pizzaCalculator = new PizzaCalculator();
 
         Scanner scanner = getScanner();
 
@@ -16,7 +16,7 @@ public class PizzaParty1 {
         print("How many pizzas do you have? ");
         int pizzas = scanner.nextInt();
 
-        int totalSlices = pizzas * SLICES_PER_PIZZA;
+        int totalSlices = pizzaCalculator.calculateTotalSlices(pizzas);
 
         int slicesPerPerson = totalSlices / people;
         int leftOverSlices = totalSlices - (people * slicesPerPerson);
