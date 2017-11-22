@@ -28,11 +28,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.20.1</version>
                 <configuration>
-                    <!--<includes>-->
-                        <!--<include>SquareTest.java</include>-->
-                    <!--</includes>-->
+                    <includes>
+                        <include>**/Ch3TestSuite.java</include>
+                    </includes>
                     <excludes>
-                        <exclude>SquareTest.java</exclude>
+                        <exclude>**/*Test.java</exclude>
                     </excludes>
                 </configuration>
             </plugin>
