@@ -10,6 +10,17 @@
   <name>junit-exercises</name>
   <url>http://maven.apache.org</url>
 
+  <developers>
+    <developer>
+      <name>Luke Buthman</name>
+      <id>lbuthman</id>
+      <organization>LCB inc.</organization>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+  </developers>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
