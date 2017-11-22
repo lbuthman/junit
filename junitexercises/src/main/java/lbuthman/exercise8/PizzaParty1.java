@@ -12,13 +12,15 @@ public class PizzaParty1 {
 
         print("How many hungry folks you got? ");
         int people = scanner.nextInt();
+        pizzaCalculator.setPeople(people);
 
         print("How many pizzas do you have? ");
         int pizzas = scanner.nextInt();
+        pizzaCalculator.setPizzas(pizzas);
 
-        int totalSlices = pizzaCalculator.calculateTotalSlices(pizzas);
+        int totalSlices = pizzaCalculator.calculateTotalSlices();
 
-        int slicesPerPerson = totalSlices / people;
+        int slicesPerPerson = pizzaCalculator.calculateSlicesPerPerson();
         int leftOverSlices = totalSlices - (people * slicesPerPerson);
 
         println("Each person gets " + slicesPerPerson + " slices of pizza.");
