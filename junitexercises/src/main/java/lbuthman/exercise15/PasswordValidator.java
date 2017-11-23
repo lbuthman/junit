@@ -7,14 +7,29 @@ import java.util.Scanner;
 public class PasswordValidator {
     public static void main(String[] args) {
         Scanner input = getScanner();
+        SecretPassword secretPassword = new SecretPassword("floatingCastle");
 
         print("What is the password? ");
         String password = input.next();
 
-        if (password.equals("floatingCastle")) {
-            print("You got it!");
-        } else {
-            print("I don't know who you are.");
+        println(secretPassword.checkPassword(password));
+    }
+}
+
+class SecretPassword {
+
+    private String password;
+
+    SecretPassword(String password) {
+        this.password = password;
+    }
+
+    String checkPassword(String guess) {
+        if (guess.equals(password)) {
+            return "You got it!";
+        }
+        else {
+            return "I don't know who you are.";
         }
     }
 }
