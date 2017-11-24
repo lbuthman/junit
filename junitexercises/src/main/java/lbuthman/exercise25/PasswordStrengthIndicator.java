@@ -35,7 +35,7 @@ public class PasswordStrengthIndicator {
         println("The password \"" + password + "\" a " + strength + " password.");
     }
 
-    private static int passwordValidator(String password) {
+    static int passwordValidator(String password) {
 
         int v = 0;
         v += hasDigits(password) ? 1 : 0;
@@ -46,19 +46,19 @@ public class PasswordStrengthIndicator {
         return v;
     }
 
-    private static boolean hasDigits(String p) {
+    static boolean hasDigits(String p) {
         return p.matches(".*[\\d]+.*");
     }
 
-    private static boolean hasLetters(String p) {
+    static boolean hasLetters(String p) {
         return p.matches(".*[a-zA-Z]+.*");
     }
 
-    private static boolean hasEightCharacters(String p) {
+    static boolean hasEightCharacters(String p) {
         return p.length() >= 8;
     }
 
-    private static boolean hasSpecialCharacter(String p) {
+    static boolean hasSpecialCharacter(String p) {
         return p.matches(".*[\\W]+.*");
     }
 }
