@@ -22,7 +22,7 @@ public class AnagramChecker {
         print("\"" + firstString + "\" and " + "\"" + secondString + "\"" + result);
     }
 
-    private static boolean isAnagram(String s, String t) {
+    static boolean isAnagram(String s, String t) {
         char[] sChars = s.toLowerCase().replace("[\\s]", "").toCharArray();
         char[] tChars = t.toLowerCase().replace("[\\s]", "").toCharArray();
         Arrays.sort(sChars);
