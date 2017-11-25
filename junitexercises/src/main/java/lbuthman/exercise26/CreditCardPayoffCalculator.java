@@ -23,11 +23,11 @@ public class CreditCardPayoffCalculator {
 
     }
 
-    private static double calculateMonthsUntilPaidOff(double b, double apr, double p) {
+    static double calculateMonthsUntilPaidOff(double balance, double apr, double payment) {
 
         double i = apr / 365.0; //daily rate
 
-        double numerator = Math.log(1 + b/p * (1 - Math.pow((1 + i), 30)));
+        double numerator = Math.log(1 + balance/payment * (1 - Math.pow((1 + i), 30)));
 
         double denominator = Math.log(1 + i);
 
