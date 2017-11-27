@@ -22,7 +22,7 @@ public class KarvonenHeartRate {
         }
     }
 
-    private static int calculateTargetHR(int age, int restingHR, double intensity) {
+    static int calculateTargetHR(int age, int restingHR, double intensity) {
         return (int) Math.round((((220 - age) - restingHR) * intensity) + restingHR);
     }
 }
