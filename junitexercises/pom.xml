@@ -40,7 +40,7 @@
         <version>2.20.1</version>
         <configuration>
           <includes>
-            <include>**/Ch6TestSuite.java</include>
+            <include>**/Ch7TestSuite.java</include>
           </includes>
           <excludes>
             <exclude>**/*Test.java</exclude>
