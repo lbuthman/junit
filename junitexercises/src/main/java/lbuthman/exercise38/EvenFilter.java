@@ -23,7 +23,7 @@ public class EvenFilter {
         println("The even numbers are: " + evenNumbers);
     }
 
-    private static String filterEvenNumbers(List<Integer> numbers) {
+    static String filterEvenNumbers(List<Integer> numbers) {
         StringBuilder stringBuilder = new StringBuilder();
 
         for (Integer n: numbers) {
