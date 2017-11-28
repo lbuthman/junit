@@ -41,7 +41,7 @@ public class GuessTheNumber {
 
     }
 
-    private static int getRandomNumber(int range) {
+    static int getRandomNumber(int range) {
         return (int) (Math.random() * range) + 1;
     }
 
