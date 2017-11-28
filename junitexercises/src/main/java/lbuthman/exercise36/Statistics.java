@@ -45,7 +45,7 @@ public class Statistics {
         println("Goodbye");
     }
 
-    private static double calculateAverage(List<Double> numbers) {
+    static double calculateAverage(List<Double> numbers) {
         double total = 0;
         for (Double n: numbers) {
             total += n;
@@ -53,7 +53,7 @@ public class Statistics {
         return total / numbers.size();
     }
 
-    private static double calculateMinimum(List<Double> numbers) {
+    static double calculateMinimum(List<Double> numbers) {
         double minimum = numbers.get(0);
         for (Double n : numbers) {
             minimum = minimum < n ? minimum : n;
@@ -61,7 +61,7 @@ public class Statistics {
         return minimum;
     }
 
-    private static double calculateMaximum(List<Double> numbers) {
+    static double calculateMaximum(List<Double> numbers) {
         double maximum = numbers.get(0);
         for (Double n: numbers) {
             maximum = maximum > n ? maximum : n;
@@ -69,7 +69,7 @@ public class Statistics {
         return maximum;
     }
 
-    private static double calculateStandardDeviation(List<Double> numbers, double mean) {
+    static double calculateStandardDeviation(List<Double> numbers, double mean) {
         List<Double> differencesFromMean = new ArrayList<>();
         double totalOfDifferencesFromMean = 0;
 
